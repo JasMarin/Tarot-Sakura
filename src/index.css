@@ -1,8 +1,28 @@
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap'); 
+
+ *{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+ }
+
+:root {
+  --rosapalido:#F9B7DF;
+  --rosaoscuro:#D82F61;
+  --blanco:white;
+  --black: black;
+  --dorado:#DFC79C;
+  --fuentetexto:'Kavivanar', cursive;
+  --lilaflojo:#AA8DD8;
+  --lilafuerte:#744EAA;
+  --amarillo:#FAB400;
+  --marron:#BF6952;
+
+} 
+
+body {
+font-family:var(--fuentetexto);
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
