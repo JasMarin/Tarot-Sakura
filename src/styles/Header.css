@@ -1,5 +1,14 @@
 .header {
     background-color: var(--rosapalido);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .menu{
     background-color: var(--amarillo);
@@ -11,4 +20,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
+}
+
+h1{
+    color: var(--rosaoscuro);
+    font-weight: 100;
 }

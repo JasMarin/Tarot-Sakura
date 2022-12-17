@@ -1,16 +1,14 @@
-
 import React from 'react'
 import '../styles/Header.css'
+import cristalBall from '../assets/img/cristal_ball.png'
 
 function Header(props) {
   return (
-    <div className={props.class}>
-       <a className='crystal-ball' href='#'>
-        <img src= './assets/img/cristalball.jpg' alt='bola de cristal'></img>
-       </a>
+    <div className='header'>
+       <a className='crystal-ball' href='/'><img src={cristalBall} alt='bola de cristal'/></a>
         <h1>Tarot Sakura</h1>
         <div className='menu'>
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
         </div>
         
     </div>
@@ -18,7 +16,3 @@ function Header(props) {
 }
 
 export default Header;
-Header.defaultProps = {
-    class:"header"
-   
-}
