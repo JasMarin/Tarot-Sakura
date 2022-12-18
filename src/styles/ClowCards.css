@@ -1,0 +1,17 @@
+.cards-continer{
+    background-color: var(--rosapalido);
+    background-image: url("../assets/img/imagen_fondo.png");
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    /* place-content: center; */
+    padding: 78px 8px 10px 7px;
+    column-gap: 5px;
+    row-gap: 10px;
+    font-size: 0.5rem;
+}
+
+.cards-img{
+    width: 57px;
+    height: 126.91px;
+}

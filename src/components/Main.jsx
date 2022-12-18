@@ -8,11 +8,11 @@ function Main() {
   return (
     <div className='main'>
         <div className='caja-carta'>
-        <a className='reverso-carta-clow'><img src={cartaClow} alt='Reverso carta clow.'/></a>
-        <h3 className='text-clow'><a href="/">Clow</a></h3>
+        <a className='reverso-carta-clow' href='/secondpage'><img src={cartaClow} alt='Reverso carta clow.'/></a>
+        <h3 className='text-clow'><a href='/secondpage'>Clow</a></h3>
         </div>
         <div className='caja-carta'>
-        <a><img src={cartaSakura} alt='Reverso carta sakura.'/></a>
+        <a><img src={cartaSakura} href='/' alt='Reverso carta sakura.'/></a>
         <h3><a href="/">Sakura</a></h3>
         </div>
     </div>

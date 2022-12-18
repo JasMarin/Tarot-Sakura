@@ -1,6 +1,6 @@
 .main{
     background-color: var(--rosapalido);
-    background-image: url("../assets/img/imagen_fondo.jpg");
+    background-image: url("../assets/img/imagen_fondo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,4 +16,5 @@
 
 .caja-carta{
     height: 100%;
+    padding-top: 20px;
 }

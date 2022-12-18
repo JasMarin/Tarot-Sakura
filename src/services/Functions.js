@@ -3,4 +3,7 @@ const GetCards = (state) => {
     .then (resp => resp.json())
     .then (data => state(data))
 };
-export default GetCards
+
+export {
+    GetCards
+} 
