@@ -1,16 +1,40 @@
+.menu{
+    background-color: var(--amarillo);
+    color: var(--blanco);
+    border-radius: 5rem;
+    width: 3rem;
+    height: 2rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+
 .toggle-menu{
     list-style: none;
-    color: var(--dorado);
     background-color:hsla(0, 44%, 86%,0.9);
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     position: absolute;
     top: 68px ;
     left: 0;
+    text-decoration: none;
 }
 
+.toggle-menu.active{
+    display: flex;
+}
+
+
 li{
-    padding: 10px 40vw;
-    border-bottom: 0.1rem solid var(--rosaoscuro);
+    padding: 20px 40vw;
+    border-bottom: 0.1rem solid var(--rosaoscuro); 
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dorado);
 }

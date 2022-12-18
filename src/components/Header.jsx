@@ -8,11 +8,7 @@ function Header(props) {
     <div className='header'>
        <a className='crystal-ball' href='/'><img src={cristalBall} alt='bola de cristal'/></a>
         <h1>Tarot Sakura</h1>
-        <div className='menu'>
-        <i className="fa-solid fa-bars"></i>
         <ToggleMenu/>
-        </div>
-        
     </div>
   )
 }
