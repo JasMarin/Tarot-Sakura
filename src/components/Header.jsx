@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Header.css'
 import cristalBall from '../assets/img/cristal_ball.png'
+import ToggleMenu from './ToggleMenu';
 
 function Header(props) {
   return (
@@ -9,6 +10,7 @@ function Header(props) {
         <h1>Tarot Sakura</h1>
         <div className='menu'>
         <i className="fa-solid fa-bars"></i>
+        <ToggleMenu/>
         </div>
         
     </div>
