@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/ToggleMenu.css'
 
 function ToggleMenu() {
+    const [hiddenMenu, setHiddenMenu] = useState(true);
   return (
     <nav>
-        <ul className='toggle-menu'>
-            <li>Inicio</li>
-            <li>Clow</li>
-            <li>Sakura</li>
+        <div className='menu' onClick={() => setHiddenMenu(!hiddenMenu)}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+        <ul className={`toggle-menu ${(hiddenMenu ? '' : 'active')}`}>
+            <li><Link to='/'>Inicio</Link></li>
+            <li><Link to='/secondpage'>Clow</Link></li>
+            <li><Link to='/secondpage'>Sakura</Link></li>
         </ul>
     </nav>
   )
