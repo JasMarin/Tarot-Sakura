@@ -6,7 +6,7 @@ import Main from './components/Main';
 function App() {
   return (
   <>
-    <Header/>
+    <Header title= 'Tarot Sakura'/>
     <Main/> 
   </>
   )

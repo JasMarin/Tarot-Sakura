@@ -12,7 +12,9 @@
     margin-bottom: 20%;
 }
 
-h1{
+.titles{
+    
     color: var(--rosaoscuro);
     font-weight: 100;
+    
 }

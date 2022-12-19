@@ -6,7 +6,7 @@ import { CardsProvider } from '../context/CardsContext'
 function SecondPage() {
   return (
     <CardsProvider>
-        <Header/>
+        <Header title = 'Cartas Clow'/>
         <ClowCards/>
     </CardsProvider>
   )
