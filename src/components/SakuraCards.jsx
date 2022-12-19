@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {GetCards} from '../services/Functions'
+import '../styles/SakuraCards.css'
 
 function SakuraCards() {
     const [cards, setCards] = useState(null);
@@ -9,12 +10,12 @@ function SakuraCards() {
       },[]);
   return (
         
-    <div className='cards-continer'>
+    <div className='sakuracards-continer background' >
         {cards !== null ? (
         cards.map(card => (
           
             <div key={card.id}>
-                <img className='cards-img' src={card.cardsReverse.sakuraReverse} alt={card.spanishName}/>
+                <img className='sakuracards-img' src={card.cardsReverse.sakuraReverse} alt={card.spanishName}/>
             </div>
          
         ))
