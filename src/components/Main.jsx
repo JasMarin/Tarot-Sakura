@@ -14,8 +14,8 @@ function Main() {
           <h3 className='text-clow'><Link to='/secondpage'>Clow</Link></h3>
         </div>
         <div className='caja-carta'>
-        <Link to='/'><img src={cartaSakura} alt='Reverso carta sakura.'/></Link>
-        <h3><Link to="/">Sakura</Link></h3>
+        <Link to='/thirdpage'><img src={cartaSakura} alt='Reverso carta sakura.'/></Link>
+        <h3><Link to="/thirdpage">Sakura</Link></h3>
         </div>
     </div>
   )

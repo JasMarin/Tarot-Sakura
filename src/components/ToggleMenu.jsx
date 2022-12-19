@@ -12,7 +12,7 @@ function ToggleMenu() {
         <ul className={`toggle-menu ${(hiddenMenu ? '' : 'active')}`}>
             <li><Link to='/'>Inicio</Link></li>
             <li><Link to='/secondpage'>Clow</Link></li>
-            <li><Link to='/secondpage'>Sakura</Link></li>
+            <li><Link to='/thirdpage'>Sakura</Link></li>
         </ul>
     </nav>
   )
