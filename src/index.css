@@ -32,3 +32,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.background{
+  background-color: var(--rosapalido);
+  background-image: url("./assets/img/imagen_fondo.png");
+}
