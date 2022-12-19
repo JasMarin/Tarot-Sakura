@@ -1,0 +1,16 @@
+.sakuracards-continer {
+    background-color:var( --blanco);
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    padding: 78px 8px 11px 8px;
+    column-gap: 5px;
+    row-gap: 11px;
+    font-size: 0.5rem;
+
+}
+.sakuracards-img {
+    width: 57px;
+    height: 126.91px;
+}
