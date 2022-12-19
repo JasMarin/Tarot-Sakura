@@ -1,6 +1,4 @@
 .main{
-    background-color: var(--rosapalido);
-    background-image: url("../assets/img/imagen_fondo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

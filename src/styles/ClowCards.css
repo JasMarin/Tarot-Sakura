@@ -1,6 +1,4 @@
 .cards-continer{
-    background-color: var(--rosapalido);
-    background-image: url("../assets/img/imagen_fondo.png");
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(11, 1fr);
