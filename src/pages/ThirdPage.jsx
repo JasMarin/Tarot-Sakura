@@ -7,7 +7,7 @@ import '../styles/ThirdPage.css'
 function ThirdPage() {
   return (
     <div>
-        <Header/>
+        <Header title = 'Cartas Sakura'/>
         <SakuraCards/>
     </div>
   )
