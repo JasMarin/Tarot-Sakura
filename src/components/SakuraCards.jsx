@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
+import { CardsContext } from '../context/CardsContext';
 import {GetCards} from '../services/Functions'
 import '../styles/SakuraCards.css'
 
@@ -8,6 +9,8 @@ function SakuraCards() {
     useEffect(()=>{
         GetCards(setCards)
       },[]);
+
+    const {addToLecture} = useContext(CardsContext);
   return (
         
     <div className='sakuracards-continer background' >
@@ -15,7 +18,7 @@ function SakuraCards() {
         cards.map(card => (
           
             <div key={card.id}>
-                <img className='sakuracards-img' src={card.cardsReverse.sakuraReverse} alt={card.spanishName}/>
+                <img className='sakuracards-img' src={card.cardsReverse.sakuraReverse} alt={card.spanishName} onClick={() => addToLecture(card)}/>
             </div>
          
         ))

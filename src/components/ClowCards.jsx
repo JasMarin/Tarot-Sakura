@@ -10,7 +10,7 @@ function ClowCards ()  {
     
     useEffect(()=>{
         GetCards(setCards)
-      },[]);
+     },[]);
   
     const {addToLecture} = useContext(CardsContext);
     console.log(addToLecture);
