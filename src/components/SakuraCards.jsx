@@ -18,7 +18,7 @@ function SakuraCards() {
         cards.map(card => (
           
             <div key={card.id}>
-                <img className='sakuracards-img' src={card.cardsReverse.sakuraReverse} alt={card.spanishName} onClick={() => addToLecture(card)}/>
+                <img className='sakuracards-img card-animation' src={card.cardsReverse.sakuraReverse} alt={card.spanishName} onClick={() => addToLecture(card)}/>
             </div>
          
         ))

@@ -20,7 +20,7 @@ function ClowCards ()  {
         cards.map(card => (
           
             <div key={card.id}>
-                <img className='cards-img' src={card.cardsReverse.clowReverse} alt={card.spanishName} onClick={() => addToLecture(card)}/>
+                <img className='cards-img card-animation' src={card.cardsReverse.clowReverse} alt={card.spanishName} onClick={() => addToLecture(card)}/>
             </div>
          
         ))
