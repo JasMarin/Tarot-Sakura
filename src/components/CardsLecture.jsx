@@ -1,10 +1,10 @@
-import React, { useContext, useEffect} from 'react'
+import React, { useContext} from 'react'
 import { CardsContext } from '../context/CardsContext';
 import '../styles/CardsLecture.css'
 
 function CardsLecture() {
     const {cardsItems} = useContext(CardsContext);
-   
+    console.log(cardsItems);
   return (
     <div className='lecture-continer background'>
 
@@ -12,8 +12,10 @@ function CardsLecture() {
             <p>No has seleccionado ninguna carta aún.</p>
         ) : (
             <>
+            
                 {cardsItems.map((card, id) => (
                     <div className='lecture-content' key={id}>
+                        <p>{cardsItems[0] ? ('Pasado') : cardsItems[1] ? ('Presente') : ('Fururo')}</p>
                         <img className='lecture-img' src={card.clowCard} alt={card.spanishName}/>
                         <p className='card-name text-background'><span>{card.spanishName}</span><span>{card.kanji}</span></p>
                         <p className='meaning text-background'>{card.meaning}</p>

@@ -1,4 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react'
+import Swal from 'sweetalert2'
+
 
 export const CardsContext = createContext();
 
@@ -18,11 +20,22 @@ export const CardsProvider = ({children}) => {
     }, [cardsItems]);
 
     const addToLecture = (card) => {
+        const inLecture = cardsItems.find(
+            (cardInLecture) => cardInLecture.id === card.id
+            );
+        
+        if (inLecture) {
+            return (
+                Swal.fire('Elige una carta diferente. Esta carta ya había sido agregada.'));  
+        };
+        
         if (cardsItems && cardsItems.length < 3) {
             setCardsItems([...cardsItems, {...card}])
             return
         }
-        alert('ya agregaste 3 cartas')
+        Swal.fire('ya agregaste 3 cartas');
+
+       
     };
 
     return (
