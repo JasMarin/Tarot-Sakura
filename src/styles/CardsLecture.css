@@ -1,0 +1,45 @@
+
+
+.lecture-continer{
+    background-color: var(--blanco);
+    padding-top: 78px;
+    display: flex;
+    overflow-x: scroll;
+    height: 100vh;
+    gap: 14px;
+
+}
+
+.lecture-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    width: 90%;
+    margin: 0 15px;
+}
+
+.lecture-img{
+  width:181px ;  
+  height: 340px; 
+}
+
+.card-name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.text-background{
+    background-color: var(--rosatransparente);
+    padding: 0.3rem 0.6rem;
+}
+
+.meaning{
+    inline-size: 250px;
+    overflow-wrap: break-word;
+    
+}

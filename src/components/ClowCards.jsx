@@ -7,12 +7,13 @@ import '../styles/ClowCards.css'
 function ClowCards ()  {
    
     const [cards, setCards] = useState(null);
-    console.log(addToLecture);
+    
     useEffect(()=>{
         GetCards(setCards)
       },[]);
   
     const {addToLecture} = useContext(CardsContext);
+    console.log(addToLecture);
   return (
      <div className='cards-continer background'>
         {cards !== null ? (

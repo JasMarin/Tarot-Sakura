@@ -13,7 +13,7 @@
 
 .toggle-menu{
     list-style: none;
-    background-color:hsla(0, 44%, 86%,0.9);
+    background-color:var(--rosatransparente);
     display: none;
     flex-direction: column;
     text-align: center;

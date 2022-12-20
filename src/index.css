@@ -13,6 +13,7 @@
   --black: black;
   --dorado:#B19931;
   --doradopalido:#F9B7DF;
+  --rosatransparente:hsla(0, 44%, 86%,0.9);
   --fuentetexto:'Kavivanar', cursive;
   --lilaflojo:#AA8DD8;
   --lilafuerte:#744EAA;
@@ -39,5 +40,9 @@ code {
 .background{
   background-color: var(--rosapalido);
   background-image: url("./assets/img/imagen_fondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right center;
 }
 

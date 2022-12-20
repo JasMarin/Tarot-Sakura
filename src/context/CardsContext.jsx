@@ -15,7 +15,6 @@ export const CardsProvider = ({children}) => {
 
     useEffect(() => {
         sessionStorage.setItem("cardsSelected", JSON.stringify(cardsItems));
-        console.log(cardsItems);
     }, [cardsItems]);
 
     const addToLecture = (card) => {
