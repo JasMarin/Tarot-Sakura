@@ -39,6 +39,7 @@ Puedes hacer tu tirada de tarot desde cualquier dispositivo, ya sea pc, desktop 
 <img width="175" src="https://github.com/JasMarin/tarot-sakura/blob/main/src/assets/img/pantalla-menu-abierto.png">
 <img width="175" src="https://github.com/JasMarin/tarot-sakura/blob/main/src/assets/img/pantalla-lectura-movil.png">
 <img width="400" src="https://github.com/JasMarin/tarot-sakura/blob/main/src/assets/img/pantalla_principal_desktop.png">
+<img width="400" src="https://github.com/JasMarin/tarot-sakura/blob/main/src/assets/img/pantalla_cartas_sakura.png"></img>
 <img width="400" src="https://github.com/JasMarin/tarot-sakura/blob/main/src/assets/img/pantalla-lectura-de-cartas.png">
 
 
