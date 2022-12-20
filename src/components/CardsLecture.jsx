@@ -1,10 +1,10 @@
-import React, { useContext} from 'react'
+import React, { useContext, useEffect} from 'react'
 import { CardsContext } from '../context/CardsContext';
 import '../styles/CardsLecture.css'
 
 function CardsLecture() {
     const {cardsItems} = useContext(CardsContext);
-    console.log(cardsItems);
+   
   return (
     <div className='lecture-continer background'>
 
