@@ -18,21 +18,11 @@ export const CardsProvider = ({children}) => {
     }, [cardsItems]);
 
     const addToLecture = (card) => {
-        const inLecture = cardsItems.find(
-            (cardInLecture) => cardInLecture.id === card.id
-        );
-
-        if (inLecture) {
-            setCardsItems(
-                cardsItems.map((cardInLecture) => {
-                    if(cardInLecture.id===card.id) {
-                        return  {...inLecture};
-                    } else return cardInLecture
-                })
-            );
-        }else {
+        if (cardsItems && cardsItems.length < 3) {
             setCardsItems([...cardsItems, {...card}])
-        };
+            return
+        }
+        alert('ya agregaste 3 cartas')
     };
 
     return (
