@@ -18,3 +18,10 @@
     font-weight: 100;
     
 }
+
+@media screen and (min-width: 577px){
+    .header{
+        background-color: var(--gris);
+    }
+    
+}
