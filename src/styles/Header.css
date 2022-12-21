@@ -1,0 +1,28 @@
+.header {
+    background-color: var(--rosapalido);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20%;
+    z-index: 99999;
+}
+
+.titles{
+    
+    color: var(--rosaoscuro);
+    font-weight: 100;
+    
+}
+
+@media screen and (min-width: 577px){
+    .header{
+        background-color: var(--gris);
+    }
+    
+}

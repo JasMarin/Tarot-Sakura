@@ -1,0 +1,46 @@
+.sakuracards-continer {
+    background-color:var( --blanco);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    padding: 78px 8px 11px 8px;
+    column-gap: 5px;
+    row-gap: 11px;
+    font-size: 0.5rem;
+
+}
+
+.sakuracards-img {
+    width: 57px;
+    height: 126.91px;
+}
+
+@media screen and (min-width: 577px){
+    .sakuracards-continer{
+        grid-template-columns: repeat(9, 1fr);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+
+    .sakuracards-img{
+        width: 80px;
+        height: 178.25px;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .sakuracards-continer{
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+
+    .sakuracards-img{
+        width: 80px;
+        height: 178.25px;
+    }
+
+}

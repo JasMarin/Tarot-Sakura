@@ -1,0 +1,72 @@
+
+
+.lecture-continer{
+    background-color: var(--blanco);
+    padding-top: 78px;
+    display: flex;
+    overflow-x: scroll;
+    height: 100vh;
+    gap: 14px;
+
+}
+
+.lecture-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    width: 90%;
+    margin: 0 15px;
+}
+
+.prediction-date{
+    color: var(--dorado);
+    font-size: 1.2rem;
+}
+
+.lecture-img{
+  width:181px ;  
+  height: 340px; 
+}
+
+.card-name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.text-background{
+    background-color: var(--rosatransparente);
+    padding: 0.3rem 0.6rem;
+}
+
+.meaning{
+    inline-size: 250px;
+    overflow-wrap: break-word;
+    
+}
+
+@media screen and (min-width: 577px){
+    .lecture-continer{
+        padding-top: 0;
+        align-items: center;
+        justify-content: space-around;
+        overflow-x: unset;
+    }
+
+    .lecture-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        width: 10%;
+        margin: 0 15px;
+
+    }
+    
+
+}

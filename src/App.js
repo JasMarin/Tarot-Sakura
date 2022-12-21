@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
 
 function App() {
+  sessionStorage.clear()
   return (
-    <div className="App">
-     
-      
-    </div>
-  );
+  <>
+    <Header title= 'Tarot Sakura'/>
+    <Main/> 
+  </>
+  )
 }
 
 export default App;

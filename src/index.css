@@ -1,13 +1,62 @@
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap'); 
+
+ *{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+ }
+
+:root {
+  --rosapalido:#F9B7DF;
+  --rosaoscuro:#D82F61;
+  --blanco:white;
+  --black: black;
+  --dorado:#B19931;
+  --doradopalido:#F9B7DF;
+  --gris:#D9D9D9;
+  --rosatransparente:hsla(0, 44%, 86%,0.9);
+  --fuentetexto:'Kavivanar', cursive;
+  --lilaflojo:#AA8DD8;
+  --lilafuerte:#744EAA;
+  --amarillo:#FAB400;
+  --marron:#BF6952;
+
+} 
+
+body {
+font-family:var(--fuentetexto);
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* display: flex; */
+/*   justify-content: center; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.background{
+  background-color: var(--rosapalido);
+  background-image: url("./assets/img/imagen_fondo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right center;
+}
+
+.card-animation{
+    overflow: hidden;
+    background: var(--blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+
+.card-animation:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+  z-index: -1;
+}
+
