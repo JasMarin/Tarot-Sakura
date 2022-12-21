@@ -20,6 +20,11 @@
     margin: 0 15px;
 }
 
+.prediction-date{
+    color: var(--dorado);
+    font-size: 1.2rem;
+}
+
 .lecture-img{
   width:181px ;  
   height: 340px; 
@@ -42,4 +47,26 @@
     inline-size: 250px;
     overflow-wrap: break-word;
     
+}
+
+@media screen and (min-width: 577px){
+    .lecture-continer{
+        padding-top: 0;
+        align-items: center;
+        justify-content: space-around;
+        overflow-x: unset;
+    }
+
+    .lecture-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        width: 10%;
+        margin: 0 15px;
+
+    }
+    
+
 }

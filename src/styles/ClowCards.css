@@ -14,3 +14,31 @@
     height: 126.91px;
 }
 
+@media screen and (min-width: 577px){
+    .cards-continer{
+        grid-template-columns: repeat(9, 1fr);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+
+    .cards-img{
+        width: 80px;
+        height: 178.25px;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .cards-continer{
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+
+    .cards-img{
+        width: 80px;
+        height: 178.25px;
+    }
+
+}
