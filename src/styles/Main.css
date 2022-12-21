@@ -16,3 +16,20 @@
 h3{
     text-align: center;
 }
+
+@media screen and (min-width: 577px){
+    .main{
+        flex-direction: row; 
+        justify-content: space-around;
+        align-content: center;
+        overflow-y: unset;
+        margin-top: 0;
+    }
+
+    .caja-carta{
+        padding-top: 20vh;
+    }
+
+
+
+}
