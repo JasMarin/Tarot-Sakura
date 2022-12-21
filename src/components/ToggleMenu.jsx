@@ -10,9 +10,9 @@ function ToggleMenu() {
           <i className="fa-solid fa-bars"></i>
         </div>
         <ul className={`toggle-menu ${(hiddenMenu ? '' : 'active')}`}>
-            <li><Link to='/'>Inicio</Link></li>
-            <li><Link to='/secondpage'>Clow</Link></li>
-            <li><Link to='/thirdpage'>Sakura</Link></li>
+            <li><Link to={'/'}>Inicio</Link></li>
+            <li><Link to={'/secondpage'}>Clow</Link></li>
+            <li><Link to={'/thirdpage'}>Sakura</Link></li>
         </ul>
     </nav>
   )

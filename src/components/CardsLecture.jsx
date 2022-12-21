@@ -13,9 +13,9 @@ function CardsLecture() {
         ) : (
             <>
             
-                {cardsItems.map((card, id) => (
-                    <div className='lecture-content' key={id}>
-                        <p>{cardsItems[0] ? ('Pasado') : cardsItems[1] ? ('Presente') : ('Fururo')}</p>
+                {cardsItems.map((card, index) => (
+                    <div className='lecture-content' key={index}>
+                        <p className='prediction-date'>{index === 0 ? ('Pasado') : index === 1 ? ('Presente') : ('Fururo')}</p>
                         <img className='lecture-img' src={card.clowCard} alt={card.spanishName}/>
                         <p className='card-name text-background'><span>{card.spanishName}</span><span>{card.kanji}</span></p>
                         <p className='meaning text-background'>{card.meaning}</p>
